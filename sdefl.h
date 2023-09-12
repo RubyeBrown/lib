@@ -1,4 +1,4 @@
-/*# Small Deflate
+/ #*Small Deflate
 `sdefl` is a small bare bone lossless compression library in ANSI C (ISO C90)
 which implements the Deflate (RFC 1951) compressed data format specification standard.
 It is mainly tuned to get as much speed and compression ratio from as little code
@@ -26,7 +26,7 @@ and the API of the library without including the implementation of the library.
 Implementation mode:
 If you define `SDEFL_IMPLEMENTATION` before including this file, it will
 compile the implementation . Make sure that you only include
-this file implementation in *one* C or C++ file to prevent collisions.
+this file implementation in  one* C or C++ file to prevent collisions.
 
 ### Benchmark
 
@@ -788,3 +788,4 @@ sdefl_bound(int len) {
   return bound;
 }
 #endif /* SDEFL_IMPLEMENTATION */
+ 
