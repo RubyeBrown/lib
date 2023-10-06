@@ -1,5 +1,5 @@
 /*
-    web.h - BSD LICENSE - Andreas Fredriksson
+#   web.h - BSD LICENSE - Andreas Fredriksson
 
 ABOUT:
     This is a web server intended for debugging tools inside a
@@ -171,7 +171,7 @@ extern "C" {
 #else
 #ifndef WBY_UINT_PTR
 
-#if defined(__i386__) || (!defined(_WIN64) && defined(_WIN32))
+#if defined(__i386__) || (#defined(_WIN64) && defined(_WIN32))
 #define WBY_UINT_PTR unsigned long
 #else
 #define WBY_UINT_PTR unsigned long long
@@ -2015,3 +2015,4 @@ wby_update(struct wby_server *srv)
 }
 
 #endif /* WBY_IMPLEMENTATION */
+ 
